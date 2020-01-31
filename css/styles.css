@@ -4,18 +4,14 @@ Colors:
 #49c5b6 - Teal
 *******/
 
-.logotest {
+.logo {
   display: block;
-  font-family: 'Gugi', cursive;
+  font-family: "Gugi", cursive;
   font-size: 4rem;
 }
 
-.testdiv img {
-  max-width: 14rem;
-  background: #fff;
-  padding: 1em;
-  border-radius: 1rem;
-  margin: 0.5rem;
+.logo--footer {
+  font-size: 2rem;
 }
 
 body,
@@ -26,7 +22,7 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.2;
   font-size: 18px;
   -moz-osx-font-smoothing: grayscale;
@@ -42,11 +38,38 @@ p {
 }
 
 a {
-  text-decoration: none;
   color: #49c5b6;
   -webkit-transition: color 0.2s ease;
   -o-transition: color 0.2s ease;
   transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.centered {
+  text-align: center;
+}
+
+.underline {
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 10rem;
+  background: #fff;
+  bottom: -1.5rem;
+  left: calc(50% - 5rem);
 }
 
 .accent {
@@ -59,11 +82,21 @@ strong {
 }
 
 hr {
-  margin: 4rem 0 3rem;
+  margin: 9rem 0 8rem;
   border: 0;
-  height: 1px;
-  background: #49c5b6;
-  background-image: linear-gradient(to right, #1d1e22, #49c5b6, #1d1e22);
+  height: 10px;
+  background: transparent;
+  background-image: linear-gradient(
+    45deg,
+    rgba(73, 197, 182, 0),
+    rgba(73, 197, 182, 0) 33.33%,
+    #49c5b6 33.33%,
+    #49c5b6 66.67%,
+    rgba(73, 197, 182, 0) 66.67%,
+    rgba(73, 197, 182, 0) 100%
+  );
+  background-size: 10px 100%;
+  width: 100%;
 }
 
 h1,
@@ -72,7 +105,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
   line-height: 1.4;
   margin-top: 1em;
@@ -91,23 +124,27 @@ h6 {
 
 .h1,
 h1 {
-  font-size: 38px;
+  font-size: 3rem;
   line-height: 1.2em;
   margin-bottom: 0.3em;
 }
 
 .h2,
 h2 {
-  font-size: 32px;
+  font-size: 2.8rem;
   line-height: 1.2em;
   margin-bottom: 0.6em;
 }
 
 .h3,
 h3 {
-  font-size: 19px;
+  font-size: 2.4rem;
   line-height: 1.5em;
   margin-bottom: 0.6em;
+}
+
+.enlarge-img {
+  min-width: 100%;
 }
 
 .navigation-container {
@@ -119,7 +156,7 @@ h3 {
 }
 
 .main-nav {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .main-nav ul {
@@ -135,6 +172,7 @@ h3 {
 
 .main-nav ul li a {
   position: relative;
+  text-decoration: none;
   padding: 0.5em;
   color: #fff;
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
@@ -155,7 +193,7 @@ h3 {
 
 .main-nav ul li a::before {
   margin-right: 10px;
-  content: '[';
+  content: "[";
   -webkit-transform: translateX(20px);
   -moz-transform: translateX(20px);
   transform: translateX(20px);
@@ -163,7 +201,7 @@ h3 {
 
 .main-nav ul li a::after {
   margin-left: 10px;
-  content: ']';
+  content: "]";
   -webkit-transform: translateX(-20px);
   -moz-transform: translateX(-20px);
   transform: translateX(-20px);
@@ -185,6 +223,7 @@ h3 {
   padding: 6em 0;
   text-align: center;
   text-shadow: 0px 0px 5px #333;
+  margin-bottom: 5rem;
 }
 
 .hero.content-wrapper {
@@ -209,6 +248,21 @@ h3 {
 
 .content-section-2col__img {
   flex: 0 0 35%;
+  padding: 2em;
+}
+
+.three-col-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.three-col-content__item {
+  flex: 0 0 28%;
+}
+
+.three-col-content__item img.icon {
+  max-width: 13rem;
 }
 
 .footer-container__wrapper .content-wrapper {

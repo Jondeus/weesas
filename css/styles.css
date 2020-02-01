@@ -221,6 +221,11 @@ h3 {
   min-width: 100%;
 }
 
+.header-container__wrapper {
+  position: relative;
+  z-index: 1;
+}
+
 .navigation-container {
   display: flex;
   align-items: center;

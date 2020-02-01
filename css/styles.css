@@ -391,7 +391,7 @@ h3 {
   }
 
   .content-section-2col__img {
-    ordre: 1;
+    order: 1;
     flex: 1 0 100%;
   }
 

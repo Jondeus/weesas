@@ -7,7 +7,7 @@
     <title>Weesas</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Gugi|Montserrat:400,700|Roboto:400,700&display=swap&subset=latin-ext"
+      href="https://fonts.googleapis.com/css?family=Gugi|Montserrat:400,700|PT+Serif:400,700&display=swap&subset=latin-ext"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
@@ -23,13 +23,13 @@
             <div class="main-nav">
               <ul>
                 <li>
-                  <a href="#">Services</a>
+                  <a href="#services">Services</a>
                 </li>
                 <li>
-                  <a href="#">Cases</a>
+                  <a href="#cases">Cases</a>
                 </li>
                 <li>
-                  <a href="#">Contact us</a>
+                  <a href="#contact-us">Contact us</a>
                 </li>
               </ul>
             </div>
@@ -53,7 +53,7 @@
           <div class="cube"></div>
         </div>
       </div>
-      <section class="content-section__wrapper">
+      <section class="content-section__wrapper" id="services">
         <div class="content-wrapper">
           <div class="content-section content-section-2col">
             <div class="content-section-2col__text">
@@ -141,11 +141,11 @@
               <h2>HubSpot expertise</h2>
               <p>
                 We've been working with HubSpot for years all the way from the
-                very early days (design manager v1 etc. #neverforget). Part of
-                our core business is working in and on top of HubSpot in order
-                to meet our clients goals. Whether it is providing training and
-                consultancy or developing extensions into HubSpot and
-                integrating HubSpot with other systems.
+                very early days (design manager v1 etc. #neverforget 🤘). Part
+                of our core business is working in and on top of HubSpot in
+                order to meet our clients goals. Whether it is providing
+                training and consultancy or developing extensions into HubSpot
+                and integrating HubSpot with other systems.
               </p>
               <p>
                 HubSpot is a powerful suite of tools in itself but what often
@@ -209,7 +209,224 @@
         </div>
       </section>
       <div class="content-wrapper"><hr /></div>
-      <section class="content-section__wrapper">
+      <section class="content-section__wrapper" id="cases">
+        <div class="content-wrapper">
+          <h2 class="centered underline">Cases</h2>
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-item__header investor-portal">
+                <h3>Web service portal serving 3rd party data</h3>
+                <div class="accordion-item__overlay"></div>
+              </div>
+              <div class="accordion-item__body">
+                <h4>Clients request</h4>
+                <p>
+                  Web service for providing investor information for our clients
+                  end users.
+                </p>
+                <p>
+                  Our client wanted to be able to serve information for
+                  investors on a web service. End users should be able to get a
+                  broad view of all the latest news and events from all listed
+                  companies. As well as dig deeper into a single company with
+                  vast amounts of information about it.
+                </p>
+                <p>
+                  Also important was a subscription feature where end users
+                  could subscribe to get all the upcoming news and events from
+                  the companies they've chosen.
+                </p>
+                <h4>Our solution</h4>
+                <p>
+                  First off we researched the 3rd party data sources and how we
+                  could operate with them. We also decided on the arcitecture of
+                  needed server and the solutions that send and recieve data in
+                  order to serve that to the front-end.
+                </p>
+                <p>
+                  We decided to go with a Node.js server and we built a custom
+                  API that recieves requests from the web service built on top
+                  of HubSpot CMS and sends back requested data. This Node.js
+                  server handles the data flow with the 3rd party data sources
+                  and caches the recieved and served information depending on
+                  what piece of data is in question. We also needed to provide a
+                  monitoring and logging solutions for this project.
+                </p>
+                <p>
+                  Static information that is not updated constantly we store in
+                  HubDB table and serve the content from there.
+                </p>
+                <h4>
+                  Important pieces of this project
+                </h4>
+                <ul>
+                  <li>Node.js</li>
+                  <li>Custom API</li>
+                  <li>Monitoring and logging system</li>
+                  <li>HubSpot CMS</li>
+                  <li>HubSpot's HubDB</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Accordion item -->
+            <div class="accordion-item">
+              <div class="accordion-item__header vendor-locator">
+                <h3>
+                  Extending HubSpot website with vendor locator app and database
+                </h3>
+                <div class="accordion-item__overlay"></div>
+              </div>
+              <div class="accordion-item__body">
+                <h4>Clients request</h4>
+                <p>
+                  Client requested to get a centralized source for information
+                  about their vendors and personnel at these vendor locations.
+                  Having the data centralized we can then pull the information
+                  into necessary locations on the website and maintenance is
+                  done at one singular location.
+                </p>
+                <p>
+                  On top of the database for vendor locations and their staff
+                  our client needed to get an interactive map with multi level
+                  filtering that shows real time view of their vendor database
+                  results.
+                </p>
+                <h4>Our solution</h4>
+                <p>
+                  We designed the necessary tables to be created with HubDB and
+                  what information to store in those.
+                </p>
+                <p>
+                  Development of the front-end components to create a "listing
+                  view" for the vendors which has the interactive map element
+                  showing the locations of all the vendors and bundled into that
+                  we developed a multi-level filtering based on cities, provided
+                  services and free text input search.
+                </p>
+                <p>
+                  Client also needed to have a vendor specific subpages. We set
+                  the vendors HubDB table to dynamically create subpages based
+                  on the HubDB table rows in order to fully automatize the
+                  maintenance side of things when it comes to vendor subpages.
+                </p>
+                <h4>
+                  Important pieces of this project
+                </h4>
+                <ul>
+                  <li>Google maps API</li>
+                  <li>HubSpot's HubDB</li>
+                  <li>HubSpot CMS</li>
+                  <li>Database design</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Accordion item -->
+            <div class="accordion-item">
+              <div class="accordion-item__header websites">
+                <h3>Award winning websites built with HubSpot CMS</h3>
+                <div class="accordion-item__overlay"></div>
+              </div>
+              <div class="accordion-item__body">
+                <h4>Clients request</h4>
+                <p>
+                  Client wanted a website built with HubSpot CMS. 👍
+                </p>
+                <h4>Our solution</h4>
+                <p>
+                  We recieve the design which we can provide consultancy with
+                  regards of what type of components could be smart to build
+                  into specified use cases. Design is most often either provided
+                  by our client or we've collaborated in the project with
+                  <a href="https://www.salescommunications.fi/" target="_blank"
+                    >Salescommunications Finland Oy</a
+                  >
+                  and design is provided by them. After we've gone through the
+                  designs we plan out the necessary templates and modules to be
+                  built.
+                </p>
+                <p>
+                  Depending on the project deadlines we might start to build the
+                  components and templates that consists the bulk of the website
+                  in order to get those ready for content first.
+                </p>
+                <p>
+                  By keeping things as modular as possible we will end the
+                  project with our client having tools to create countless
+                  variations thus creating an end results where our client will
+                  be able to create new resources by themselves by mix and
+                  matching the developed modules.
+                </p>
+                <p>
+                  We are also very familiar following more demanding
+                  requirements from some clients like for example in
+                  accessibility WCAG 2.0 standards.
+                </p>
+                <p>
+                  Majority of the projects need that we are also in charge of
+                  testing and publishing the website.
+                </p>
+              </div>
+            </div>
+            <!-- Accordion item -->
+            <div class="accordion-item">
+              <div class="accordion-item__header integrations">
+                <h3>Integrations tailored to your business needs</h3>
+                <div class="accordion-item__overlay"></div>
+              </div>
+              <div class="accordion-item__body">
+                <h4>Clients request</h4>
+                <p>
+                  Not able to fully move onto HubSpot yet. Marketing will be
+                  moving on HubSpot from the start but sales department remains
+                  to work in their current CRM system for time being.
+                </p>
+                <p>
+                  Business has to function seamlessly even though data will be
+                  gathered in two separate systems. Marketing has to be able to
+                  fully function using HubSpot without the need of jumping back
+                  and forth between systems and they must be able to get
+                  feedback from sales out of the leads they generate.
+                </p>
+                <p>
+                  Sales department will be fed with leads from marketing
+                  straight onto the system that they remain to use and as they
+                  progress with leads specified information will be
+                  bi-directionally synced between the two systems. Marketing and
+                  Sales processes will be positively shaken and rattled in order
+                  to increase the effectiveness of them via this integration
+                  project enabling those two departments to create a mutual
+                  understanding of what data needs to flow and where.
+                </p>
+                <h4>Our solution</h4>
+                <p>
+                  If our client does not have existing integration architecture
+                  and field mappings to provide us we start our project with
+                  that.
+                </p>
+                <p>
+                  Get all stakeholders who are affected by the integration
+                  project around the same table and decide on what scenarios the
+                  integration is supposed to handle and what data is being moved
+                  and into what direction.
+                </p>
+                <p>
+                  During the planning phase of architecture and fieldmapping we
+                  document everything and give that to our client for future
+                  reference and use the documented "blueprint" to build the
+                  integration.
+                </p>
+                <p>
+                  We do the necessary testing in order to make sure integration
+                  functions as planned. In most cases we take care of hosting
+                  and moving the integration into production.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="content-wrapper"><hr /></div>
+      <section class="content-section__wrapper" id="contact-us">
         <div class="content-wrapper">
           <div class="content-section">
             <h2 class="centered underline">Let's do a project together</h2>
@@ -258,12 +475,13 @@
       <div class="content-wrapper">
         <div class="logo-container">
           <p>
-            <span class="logo logo--footer">WEESAS</span> &copy; 2020 Weesas Oy
-            - All rights reserved.
+            <span class="logo logo--footer">WEESAS</span
+            ><small> &copy; 2020 Weesas Oy - All rights reserved.</small>
           </p>
         </div>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

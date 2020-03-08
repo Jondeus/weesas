@@ -1,6 +1,5 @@
 /******
 Colors:
-#000000 - Black
 #49c5b6 - Teal
 *******/
 
@@ -111,21 +110,21 @@ hr {
   transform-origin: top left;
   -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
   transform: scale(0) rotate(0deg) translate(-50%, -50%);
-  -webkit-animation: cube 16s ease-in forwards infinite;
-  animation: cube 16s ease-in forwards infinite;
+  -webkit-animation: cube 12s ease-in forwards infinite;
+  animation: cube 12s ease-in forwards infinite;
 }
 .cube:nth-child(2n) {
   border-color: #ffd560;
 }
 .cube:nth-child(2) {
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
   left: 25vw;
   top: 40vh;
 }
 .cube:nth-child(3) {
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
   left: 75vw;
   top: 50vh;
 }

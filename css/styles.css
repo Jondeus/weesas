@@ -1,18 +1,8 @@
 /******
 Colors:
 #49c5b6 - Teal
+#ffd560 - Gold
 *******/
-
-.logo {
-  display: block;
-  font-family: "Gugi", cursive;
-  font-size: 4rem;
-}
-
-.logo--footer {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
-}
 
 body,
 html {
@@ -233,11 +223,15 @@ h4 {
   z-index: 1;
 }
 
+.logo-container img {
+  max-width: 17rem;
+}
+
 .navigation-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 0;
+  padding: 1rem 0;
   border-bottom: 1px solid #fff;
 }
 
@@ -416,6 +410,20 @@ h4 {
   border-top: 1px solid #fff;
   padding: 1em 0;
   margin-top: 6em;
+}
+
+.footer-container__wrapper > .content-wrapper > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer-container__wrapper img.footer-logo {
+  max-width: 10rem;
+  margin-right: 1rem;
 }
 
 /* MEDIA QUERIES */

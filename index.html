@@ -5,9 +5,16 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weesas</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Gugi|Montserrat:400,700|PT+Serif:400,700&display=swap&subset=latin-ext"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Serif:400,700&display=swap&subset=latin-ext"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
@@ -17,7 +24,11 @@
       <div class="header-container content-wrapper">
         <nav class="navigation-container">
           <div class="logo-container">
-            <span class="logo">WEESAS</span>
+            <img
+              class="header-logo"
+              src="images/logo/weesas-text-light.svg"
+              alt="Weesas logo"
+            />
           </div>
           <div class="nav-container">
             <div class="main-nav">
@@ -253,17 +264,19 @@
                   order to serve that to the front-end.
                 </p>
                 <p>
-                  We decided to go with a Node.js server and we built a custom
-                  API that recieves requests from the web service built on top
-                  of HubSpot CMS and sends back requested data. This Node.js
-                  server handles the data flow with the 3rd party data sources
-                  and caches the recieved and served information depending on
-                  what piece of data is in question. We also needed to provide a
+                  We decided to tackle this with server running Node.js and we
+                  built a custom API that recieves requests from the web service
+                  built with HubSpot CMS and sends back requested data. This
+                  server then handles the data flow with the 3rd party data
+                  sources and caches the recieved and served information
+                  depending on what piece of data from the big dataset is in
+                  question. We were also tasked to provide hosting as well as
                   monitoring and logging solutions for this project.
                 </p>
                 <p>
-                  Static information that is not updated constantly we store in
-                  HubDB table and serve the content from there.
+                  Static information in this project that is not updated
+                  constantly we store in HubDB table and serve the content from
+                  there.
                 </p>
                 <h4>
                   Important pieces of this project
@@ -482,11 +495,13 @@
     </div>
     <footer class="footer-container__wrapper">
       <div class="content-wrapper">
-        <div class="logo-container">
-          <p>
-            <span class="logo logo--footer">WEESAS</span
-            ><small> &copy; 2020 Weesas Oy - All rights reserved.</small>
-          </p>
+        <div>
+          <img
+            class="footer-logo"
+            src="images/logo/weesas-text-light.svg"
+            alt="Weesas logo"
+          />
+          <small> &copy; 2020 Weesas Oy - All rights reserved.</small>
         </div>
       </div>
     </footer>

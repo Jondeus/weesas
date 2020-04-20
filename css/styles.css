@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: "PT Serif", serif;
+  font-family: 'PT Serif', serif;
   line-height: 1.2;
   font-size: 18px;
   -moz-osx-font-smoothing: grayscale;
@@ -53,7 +53,7 @@ img {
 }
 
 .underline::after {
-  content: "";
+  content: '';
   position: absolute;
   height: 2px;
   width: 10rem;
@@ -169,7 +169,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: normal;
   line-height: 1.4;
   margin-top: 1em;
@@ -236,7 +236,7 @@ h4 {
 }
 
 .main-nav {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .main-nav ul {
@@ -273,7 +273,7 @@ h4 {
 
 .main-nav ul li a::before {
   margin-right: 10px;
-  content: "[";
+  content: '[';
   -webkit-transform: translateX(20px);
   -moz-transform: translateX(20px);
   transform: translateX(20px);
@@ -281,7 +281,7 @@ h4 {
 
 .main-nav ul li a::after {
   margin-left: 10px;
-  content: "]";
+  content: ']';
   -webkit-transform: translateX(-20px);
   -moz-transform: translateX(-20px);
   transform: translateX(-20px);
@@ -351,19 +351,19 @@ h4 {
 }
 
 .accordion-item__header.investor-portal {
-  background: url("../images/stock-exchange-board-210607.jpg");
+  background: url('../images/stock-exchange-board-210607.jpg');
 }
 
 .accordion-item__header.vendor-locator {
-  background: url("../images/maps-vendor-locator.png");
+  background: url('../images/maps-vendor-locator.png');
 }
 
 .accordion-item__header.websites {
-  background: url("../images/source-code.jpg");
+  background: url('../images/source-code.jpg');
 }
 
 .accordion-item__header.integrations {
-  background: url("../images/integration-cobweb.jpg");
+  background: url('../images/integration-cobweb.jpg');
 }
 
 .accordion-item__header {
@@ -404,6 +404,26 @@ h4 {
 .accordion-item__body {
   padding: 1rem 2rem 2rem 2rem;
   background: #18191d;
+}
+
+/* Blog */
+.blog-listing-heading {
+  margin-bottom: 0.2em;
+  font-size: 1.8rem;
+}
+
+.blog-date {
+  font-style: italic;
+  color: #808080;
+}
+
+.hero-container h1.blog-heading {
+  font-size: 2.8rem;
+}
+
+.content-section--blog {
+  max-width: 60%;
+  margin: 0 auto;
 }
 
 .footer-container__wrapper .content-wrapper {
@@ -480,11 +500,11 @@ h4 {
     flex: 1 0 100%;
     margin-bottom: 2rem;
   }
-  
+
   .hero-container h1 {
     font-size: 2.5rem;
   }
-  
+
   .h1,
   h1 {
     font-size: 2.5rem;
@@ -512,5 +532,9 @@ h4 {
     font-size: 1.5rem;
     line-height: 1.5em;
     margin-bottom: 0.6em;
+  }
+
+  .content-section--blog {
+    max-width: 100%;
   }
 }

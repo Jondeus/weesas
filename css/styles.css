@@ -32,6 +32,7 @@ a {
   -webkit-transition: color 0.2s ease;
   -o-transition: color 0.2s ease;
   transition: color 0.2s ease;
+  cursor: pointer;
 }
 
 a:hover {
@@ -423,6 +424,50 @@ h4 {
 .accordion-item__body {
   padding: 1rem 2rem 2rem 2rem;
   background: #18191d;
+}
+
+/* Contact info */
+
+.contact-person-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+.contact-person {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 35%;
+  flex: 0 0 35%;
+  text-align: center;
+}
+
+.contact-person ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-person ul li {
+  margin-bottom: 0.5rem;
+}
+
+.contact-person ul li a {
+  text-decoration: none;
+}
+
+.contact-person__img img {
+  border-radius: 50%;
+  max-width: 12rem;
+}
+
+.contact-person__info .fa {
+  position: relative;
+  font-size: 1.5rem;
+  top: 0.15rem;
+  margin-right: 0.5rem;
 }
 
 /* Blog */

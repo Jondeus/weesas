@@ -493,6 +493,27 @@ h4 {
   margin: 0 auto;
 }
 
+blockquote {
+  background: transparent;
+  border-left: 10px solid #ffd561;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: '\201C''\201D''\2018''\2019';
+}
+
+blockquote:before {
+  color: #ffd561;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
 .footer-container__wrapper .content-wrapper {
   border-top: 1px solid #fff;
   padding: 1em 0;

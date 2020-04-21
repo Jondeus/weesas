@@ -436,6 +436,8 @@ h4 {
   justify-content: space-around;
   max-width: 65rem;
   margin: 0 auto;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .contact-person {
@@ -443,6 +445,7 @@ h4 {
   -ms-flex: 0 0 35%;
   flex: 0 0 35%;
   text-align: center;
+  margin-bottom: 5rem;
 }
 
 .contact-person ul {

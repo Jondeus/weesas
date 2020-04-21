@@ -38,6 +38,21 @@ a:hover {
   color: #fff;
 }
 
+.cta-btn {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  background: #49c5b6;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  display: inline-block;
+  border-radius: 50px;
+}
+
+.cta-btn.cta-btn--teal {
+  background: #49c5b6;
+  color: #1d1e22;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -216,6 +231,10 @@ h4 {
 
 .enlarge-img {
   min-width: 100%;
+}
+
+.mt-1 {
+  margin-top: 1em;
 }
 
 .header-container__wrapper {
